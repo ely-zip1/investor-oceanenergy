@@ -1,0 +1,253 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ *
+ */
+
+/*# sourceMappingURL=custom.css.map */
+.sidebar-style-2 ul>li>a{
+  /* background: #000 !important; */
+  color: #000 !important;
+}
+
+.main-content{
+  background-color: #C5E2E9;
+  background: url('../img/home-bg.jpg');
+  background-repeat: repeat;
+  background-size: 100%;
+}
+
+.login-title{
+  color: #009FE0 !important;
+}
+
+.main-navbar{
+  background: linear-gradient(50deg, #3E6CC7 0%, #00D2A3  100%);
+}
+
+.navbar{
+  right: 0px !important;
+}
+
+.alert-success-custom{
+  background: #009FE0 !important;
+}
+
+.nav-country>img{
+  width: 20px;
+  border-radius: 50% ;
+  /* border: 1px solid #000;
+  background: #000 !important; */
+}
+
+.dash-user-row{
+  float: right;
+  /* text-align: right; */
+  height: 50px;
+  min-width: 100px;
+}
+
+.username{
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.account-summary-row{
+  margin-top: 10px;
+}
+
+.summary-box{
+  padding: 10px 10px 10px 10px;
+  border-radius: 7px;
+  background: linear-gradient(180deg, #629ad8 0%, #2249ba 100%);
+  box-shadow: 0px 3px 10px 0px rgba(55, 236, 140, 1);
+  color: #ffffff;
+  min-height: 60px;
+  margin: 10px 0px;
+}
+/*
+.summary-box::after{
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, #629ad8 0%, #2249ba 100%);
+  opacity: .5;
+  border-radius: 10px;
+  height: 70px;
+  width: 240px;
+  top: 20px;
+  left: 5px;
+  display: block;
+  z-index: -1;
+}
+.summary-box::before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, #629ad8 0%, #2249ba 100%);
+  opacity: .5;
+  border-radius: 10px;
+  height: 70px;
+  width: 240px;
+  top: 30px;
+  left: -5px;
+  display: block;
+  z-index: -1;
+} */
+
+.summary-2-row{
+  margin-top: 10px;
+}
+
+.summary-box-2{
+  margin-bottom: 10px;
+}
+
+.affiliate-program-card{
+    background: linear-gradient(50deg, #00B5FF 0%, #B5FF00  100%);
+    color: #fff !important;
+}
+
+.account_balance_row{
+  border-radius: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row-deposit{
+  background-image: linear-gradient(60deg, #0038A9 0%, #019FE6 100%);
+  padding: 10px;
+  border-radius: 10px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+.row-deposit label{
+  color: #fff;
+}
+
+.rounded-button{
+  background: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  color: #019FE6;
+  padding: 5px;
+  width: 100px;
+  float: right;
+}
+
+.row-user-details{
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+}
+
+.row-user-details i{
+  font-style: normal;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.reset-password{
+  background-color: white;
+  padding: 20px;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+}
+
+.deposit-row{
+  margin-top: 30px;
+}
+
+.deposit-details{
+  background-image: linear-gradient(60deg, #0038A9 0%, #019FE6 100%);
+  padding: 10px;
+  border-radius: 7px;
+  color: white !important;
+}
+
+.deposit-details table>tbody>tr>td{
+  word-break: break-word !important;
+}
+
+.details-table{
+  margin: 10px;
+}
+
+.details-table>tbody>tr>th{
+  padding: 5px;
+  padding-left: 20px;
+  float: right;
+}
+
+.details-table>tbody>tr>td{
+  padding: 5px;
+  padding-left: 20px;
+}
+.details-table>tbody>tr>td>img{
+  padding: 5px;
+  position: relative;
+  align-self: center;
+}
+
+.user-account-form{
+  background: white;
+  border-radius: 7px;
+  border: 1px solid #ddd;
+}
+
+.pricing-padding br{
+  content: "A" !important;
+  display: block !important;
+  margin:1px !important;
+}
+
+.plan-price{
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 2px;
+  /* color: #FFB319 !important; */
+}
+
+.daily-interest{
+  font-weight: bolder;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.check-mark>i{
+  font-size: 50px;
+  color: #00FF48;
+  margin-bottom: 30px;
+}
+
+.investment-amount{
+  text-align: center;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  border-radius: 50px;
+  /* border: 1px solid #019FE6; */
+  font-size: 40px;
+  font-weight: bold;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.plan-detail{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.term-days{
+  font-weight: bold;
+  font-size: 30px;
+  position: relative;
+  top: -10px;
+}
+
+.withdrawal-note{
+  font-style: oblique;
+}
