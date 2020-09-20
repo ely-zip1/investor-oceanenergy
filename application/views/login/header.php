@@ -7,7 +7,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title><?php echo $title; ?> &mdash; Lombard Medical</title>
+  <title><?php echo $title; ?> &mdash; Ocean Energy</title>
 
   <!-- favicon -->
   <link rel="icon" href="<?=base_url()?>assets/img/favicon.ico" type="image/gif">
@@ -169,6 +169,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <body style = "
   background-color: #eee;
-  background: url(<?php echo base_url('assets/img/bg.jpg');?>);
+  background: url(<?php echo base_url('assets/img/bg.jpeg');?>);
   background-size: cover;
   ">

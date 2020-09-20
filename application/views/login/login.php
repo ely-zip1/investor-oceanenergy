@@ -15,7 +15,7 @@
                                        <div class="card-body">
                                          <div class="row">
                                            <div class="col-12 text-center">
-                                               <a href="<?= base_url();?>"><img src="<?= base_url();?>assets/img/lm-logo.png" alt="logo" width="150"></a> <br>
+                                               <a href="<?= base_url();?>"><img src="<?= base_url();?>assets/img/oe-logo.png" alt="logo" width="220"></a> <br>
                                                <br>
                                                <h3 class="login-title">Login</h3> <br>
                                            </div>

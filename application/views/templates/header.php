@@ -20,7 +20,7 @@ if(!isset($this->session->username)){
   ?>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title><?php echo $title; ?> &mdash; Lombard Medical</title>
+  <title><?php echo $title; ?> &mdash; Ocean Energy</title>
 
 
   <!-- favicon -->

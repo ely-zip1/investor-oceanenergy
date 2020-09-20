@@ -1,13 +1,13 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
-<div class="main-sidebar shadow text-white" style="background:#3E6CC7;">
+<div class="main-sidebar shadow text-white" style="background:#41C0C0;">
 	<aside id="sidebar-wrapper">
 		<div class="sidebar-brand">
-			  <a href="<?= base_url();?>"><img src="<?= base_url();?>assets/img/lm-logo-white.png" alt="logo" width="120"></a>
+			  <a href="<?= base_url();?>"><img src="<?= base_url();?>assets/img/oe-logo-bg.png" alt="logo" width="200"></a>
 		</div>
 		<div class="sidebar-brand sidebar-brand-sm">
-			  <a href="<?= base_url();?>"><img src="<?= base_url();?>assets/img/lm-logo-mini.png" alt="logo" width="40"></a>
+			  <a href="<?= base_url();?>"><img src="<?= base_url();?>assets/img/oe-logo-mini-bg.png" alt="logo" width="40"></a>
 		</div>
 		<ul class="sidebar-menu">
 			<!-- <li class="menu-header">Dashboard</li> -->

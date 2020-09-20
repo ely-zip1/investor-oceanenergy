@@ -36,9 +36,9 @@ class Login  extends CI_Controller
 		// 	closedir($handle);
 		// }
 
-		 // for($i = 1; $i < 3000; $i++){
-		 // 	$this->Referral_codes->add_code(random_string('alnum', 6));
-		 // }
+		//  for($i = 1; $i < 3000; $i++){
+		//  	$this->Referral_codes->add_code(random_string('alnum', 6));
+		//  }
 
 		if(isset($this->session->username)){
 
