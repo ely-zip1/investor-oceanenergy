@@ -84,7 +84,7 @@
 
       <div class="row summary-2-row">
 				<div class="col-12">
-					<div class="card">
+					<div class="card shadow">
 						<div class="card-header">
 							<h4>Summary</h4>
 						</div>
@@ -169,7 +169,7 @@
 
       <div class="row">
         <div class="col-lg-12 affiliate-row">
-          <div class="card affiliate-program-card">
+          <div class="card affiliate-program-card shadow">
             <div class="card-body">
 
 							<div class="row">
@@ -185,7 +185,7 @@
 
 								<div class="col-lg-6 text-center">
 									<a class="affiliate-alert" id="referral-link" href="my/ref/<?php echo $referral_code; ?>">
-										<input type="text" value="https://lombardmedical-dashboard.com/my/ref/<?php echo $referral_code; ?>" readonly id="link" class="span12"
+										<input type="text" value="https://investor-oceanenergy.com/my/ref/<?php echo $referral_code; ?>" readonly id="link" class="span12"
 														style="width: 100%;
 															height: 30px;
 															text-align: center;

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 20, 2020 at 07:13 PM
--- Server version: 10.4.10-MariaDB
--- PHP Version: 7.3.12
+-- Generation Time: Sep 21, 2020 at 10:51 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `ocean_energy`
 --
+CREATE DATABASE IF NOT EXISTS `ocean_energy` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `ocean_energy`;
 
 -- --------------------------------------------------------
 
@@ -114,8 +116,8 @@ CREATE TABLE `td_deposit_options` (
 
 INSERT INTO `td_deposit_options` (`id`, `name`, `account`, `rule`) VALUES
 (1, 'Bitcoin', '1L1niw1r7dBh9q2ruKWXQA4JcwXv7D1Ptp', ''),
-(2, 'Ethereum', '0x89bAaa939d9c2b7F740E642Ff2d719EfbF4682e2', ''),
-(3, 'Bitcoin Cash', ' qrgfpr4hhv8543h56nlc28xds7a6mm3q5qvr35vzd5', ''),
+(2, 'Bitcoin Cash', 'qrgfpr4hhv8543h56nlc28xds7a6mm3q5qvr35vzd5', ''),
+(3, 'Ethereum', '0x89bAaa939d9c2b7F740E642Ff2d719EfbF4682e2', ''),
 (4, 'Stellar', 'GDB5EUH6WZTRH5QUYROK2M6NJQQC4SFMRLCOM3GFNCPAVZ7GCABZQ5E3', ''),
 (5, 'USD Digital', '0x89bAaa939d9c2b7F740E642Ff2d719EfbF4682e2', ''),
 (11, 'Account Balance', '', '');
@@ -176,7 +178,7 @@ CREATE TABLE `td_members` (
 
 INSERT INTO `td_members` (`id`, `full_name`, `username`, `email_address`, `referral_code_id`, `date`, `password`, `account_type_id`, `contact_number`, `image_name`, `image_orientation`, `birthdate`, `country`, `verified`, `verification_code`) VALUES
 (3, 'root', 'root', 'root@root.com', 1, '2020-09-19 00:00:00', '', 3, 'na', 'na', 'na', NULL, 'na', 1, 'na'),
-(4, 'administrator admin', 'adminadmin', 'admin@gmail.com', 2, '2020-09-19 17:51:20', '$2y$11$HPyQBlgnFlqL.s4qSSTUEOZeVLNWZPd1bEj1TSs33ZKi0dqrOLJsK', 2, '', '', '', '1991-12-12', 'Philippines', 0, 'u0g5cBR'),
+(4, 'administrator admin', 'adminadmin', 'admin@gmail.com', 2, '2020-09-19 17:51:20', '$2y$11$HPyQBlgnFlqL.s4qSSTUEOZeVLNWZPd1bEj1TSs33ZKi0dqrOLJsK', 1, '', '', '', '1991-12-12', 'Philippines', 0, 'u0g5cBR'),
 (5, 'user one', 'user1', 'user1@gmail.com', 3, '2020-09-19 19:07:08', '$2y$11$lHmdY/rCRZN.FU51iGNV7eE3px68aTCUBe72Ql7kXPxOZQ7EYlctS', 2, '', '', '', '1993-12-12', 'Philippines', 0, 'TvGZ2su');
 
 -- --------------------------------------------------------
@@ -201,8 +203,8 @@ CREATE TABLE `td_packages` (
 
 INSERT INTO `td_packages` (`id`, `package_name`, `daily_rate`, `minimum_amount`, `maximum_amount`, `duration_in_days`, `expected_profit`) VALUES
 (1, 'OE12', 1.25, 150, 1499, 185, NULL),
-(2, 'OE35', 1.25, 1500, 6499, 155, NULL),
-(5, 'OE50', 1.25, 7500, 20000, 125, NULL);
+(2, 'OE35', 1.75, 1500, 6499, 155, NULL),
+(5, 'OE50', 2.25, 7500, 20000, 125, NULL);
 
 -- --------------------------------------------------------
 

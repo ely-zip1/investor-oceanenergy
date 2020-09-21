@@ -11,11 +11,21 @@
   color: #000 !important;
 }
 
-.main-content{
+.body-custom{
   background-color: #C5E2E9;
   background: url('../img/home-bg.jpg');
+  /* background: url('../img/wild-sea.jpg'); */
   background-repeat: repeat;
-  background-size: 100%;
+  background-size: 15%;
+}
+
+.body-custom-admin{
+  
+  background-color: #C5E2E9;
+  /* background: url('../img/home-bg.jpg'); */
+  background: url('../img/ocean.jpg');
+  background-repeat: repeat;
+  background-size: 15%;
 }
 
 .login-title{
@@ -23,7 +33,7 @@
 }
 
 .main-navbar{
-  background: linear-gradient(50deg, #3E6CC7 0%, #00D2A3  100%);
+  background: linear-gradient(50deg, #70CDE3 0%, #41C0C0 100%);
 }
 
 .navbar{
@@ -62,8 +72,8 @@
 .summary-box{
   padding: 10px 10px 10px 10px;
   border-radius: 7px;
-  background: linear-gradient(180deg, #629ad8 0%, #2249ba 100%);
-  box-shadow: 0px 3px 10px 0px rgba(55, 236, 140, 1);
+  background: linear-gradient(180deg, #41c0c0 0%, #006c67 100%);
+  box-shadow: 0px 3px 10px 0px rgb(170, 170, 170);
   color: #ffffff;
   min-height: 60px;
   margin: 10px 0px;
@@ -105,7 +115,7 @@
 }
 
 .affiliate-program-card{
-    background: linear-gradient(50deg, #00B5FF 0%, #B5FF00  100%);
+  background: linear-gradient(50deg, #0FF 0%, #00B05E 100%);
     color: #fff !important;
 }
 
@@ -116,7 +126,7 @@
 }
 
 .row-deposit{
-  background-image: linear-gradient(60deg, #0038A9 0%, #019FE6 100%);
+  background-image: linear-gradient(60deg, #006C67 0%, #019FE6 100%);
   padding: 10px;
   border-radius: 10px;
   vertical-align: middle;
@@ -194,7 +204,7 @@
 }
 
 .user-account-form{
-  background: white;
+  background: #41C0C0;
   border-radius: 7px;
   border: 1px solid #ddd;
 }
@@ -205,11 +215,16 @@
   margin:1px !important;
 }
 
+.pricing-title>span{
+  border-top: 1px solid white;
+}
+
 .plan-price{
   font-weight: bold;
   font-size: 70px;
   margin-bottom: 2px;
   /* color: #FFB319 !important; */
+  text-shadow: 2px 2px #006c67;
 }
 
 .daily-interest{
@@ -217,6 +232,7 @@
   font-size: 20px;
   position: relative;
   top: 20px;
+  text-shadow: 2px 2px #006c67;
 }
 
 .check-mark>i{
@@ -234,11 +250,13 @@
   font-weight: bold;
   align-self: center;
   margin-bottom: 20px;
+  text-shadow: 2px 2px #006c67;
 }
 
 .plan-detail{
   font-size: 20px;
   font-weight: normal;
+  text-shadow: 2px 2px #006c67;
 }
 
 .term-days{

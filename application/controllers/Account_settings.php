@@ -23,7 +23,7 @@ class Account_settings extends CI_Controller
 		);
 				$data['username'] = $this->session->userdata('username');
 				$data['email'] = $this->session->userdata('email');
-				$data['fullname'] = $this->session->userdata('fullname');
+				$data['fullname'] = ucwords($this->session->userdata('fullname'));
 				$data['date_registered'] = $this->session->userdata('date_registered');
 
 		$member_data = $this->Members->get_member($this->session->username);
@@ -31,7 +31,7 @@ class Account_settings extends CI_Controller
 		$data['account_name'] = $member_data->username;
 		$data['date_registered'] = $member_data->date;
 		$data['email_address'] = $member_data->email_address;
-		$data['full_name'] = $member_data->full_name;
+		$data['full_name'] = ucwords($member_data->full_name);
 
 		$bank = $this->Bank_model->get_per_member_id($member_data->id);
 

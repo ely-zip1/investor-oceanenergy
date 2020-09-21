@@ -380,7 +380,7 @@
                   </label>
                   <div for="referral" class="input-group">
                     <div class="input-group-prepend">
-                      <div class="input-group-text">lombardmedical-dashboard.com/my/ref/
+                      <div class="input-group-text">investor-oceanenergy.com/my/ref/
                       </div>
                     </div>
                     <input id="referral" name="referral" value="<?= set_value('referral',$referral_code,true)?>"

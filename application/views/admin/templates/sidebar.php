@@ -5,11 +5,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<aside id="sidebar-wrapper">
 
 		<div class="sidebar-brand">
-			<a href="<?= base_url('deposits_admin');?>">Lombard Medical</a>
+			<a href="<?= base_url('deposits_admin');?>">OCEAN ENERGY</a>
 			  <!-- <a href="<?= base_url();?>AdminDashboard"><img src="<?= base_url();?>assets/img/MPD_Logo_blue.png" alt="logo" width="150"></a> -->
 		</div>
 		<div class="sidebar-brand sidebar-brand-sm">
-			<a href="<?= base_url('deposits_admin');?>">LM</a>
+			<a href="<?= base_url('deposits_admin');?>">OE</a>
 			  <!-- <a href="<?= base_url();?>AdminDashboard"><img src="<?= base_url();?>assets/img/MPD_Logo_small_blue.png" alt="logo" width="40"></a> -->
 		</div>
 

@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <nav class="navbar navbar-expand-lg main-navbar">
         <a href="<?php echo base_url(); ?>" class="navbar-brand sidebar-gone-hide" style="color: #b9a154;">
         <img src="<?= base_url();?>assets/img/goldenocean_logo_2.png" alt="logo" width="70">
-        Lombard Medical
+        Ocean Energy
         </a>
         <a href="#" class="nav-link sidebar-gone-show" data-toggle="sidebar"><i class="fas fa-bars"></i></a>
 

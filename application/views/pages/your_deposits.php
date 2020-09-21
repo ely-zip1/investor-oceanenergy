@@ -20,7 +20,8 @@
         <div class="col-12">
 				  <div class="card bg-primary text-white text-white">
 						<div class="card-header">
-            	<h4>AORFIX</h4>
+            	<h4>OCEAN ENERGY 12 <br>
+					<span>BASIC PLAN</span> </h4>
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-hover table-striped table-sm">
@@ -58,7 +59,8 @@
         <div class="col-12">
 				  <div class="card bg-primary text-white text-white">
 						<div class="card-header">
-            	<h4>ALTURA</h4>
+            	<h4>OCEAN ENERGY 35 <br>
+					<span>STANDARD PLAN</span> </h4>
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-hover table-striped table-sm">
@@ -96,7 +98,8 @@
         <div class="col-12">
 				  <div class="card bg-primary text-white">
 						<div class="card-header">
-            	<h4>MINOS</h4>
+            	<h4>OCEAN ENERGY 50 <br>
+					<span>PREMIER PLAN</span> </h4>
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-hover table-striped table-sm">

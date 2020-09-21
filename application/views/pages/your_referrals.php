@@ -52,7 +52,7 @@
 				  <div class="card bg-primary text-white text-white">
 						<div class="card-header">
             	<h4>ACTIVE</h4>
-							( First Level to Fifth Level Referrals)
+							( First Level to Sixth Level Referrals)
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-striped">
@@ -85,7 +85,7 @@
 				  <div class="card bg-primary text-white text-white">
 						<div class="card-header">
             	<h4>INACTIVE</h4>
-							( First Level to Fifth Level Referrals)
+							( First Level to Sixth Level Referrals)
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-striped">
