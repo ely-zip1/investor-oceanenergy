@@ -52,6 +52,11 @@
 											<img src=" '.base_url('assets/img/qr_bitcoincash.png').'" alt="bitcoin cash" width="150px">
 											'. $deposit_address.'
                       </td>';
+                    }else if($deposit_payment_mode == 'USD Digital'){
+                      echo '<td style="word-wrap: break-word;">
+											<img src=" '.base_url('assets/img/qr_usdd.jpg').'" alt="usd digital" width="150px">
+											'. $deposit_address.'
+                      </td>';
                     }else{
                       echo '<td>'. $deposit_address.'</td>';
                     }

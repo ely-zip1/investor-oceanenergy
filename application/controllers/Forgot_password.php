@@ -68,7 +68,7 @@ class Forgot_password  extends CI_Controller
 
 				$this->load->library('email');
 
-        $this->email->from('customersupport@lombardmedical-dashboard.com', 'Lombard Medical Limited')
+        $this->email->from(' customercare@investor-oceanenergy.com ', 'OceanEnergy USA LLC')
             ->to($data['email'])
             ->subject('Update Password')
 						->message('Your temporary password is: '.$password);

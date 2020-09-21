@@ -118,7 +118,7 @@ class Registration extends CI_Controller{
 
 				$this->load->library('email');
 
-        $this->email->from('customersupport@lombardmedical-dashboard.com', 'Lombard Medical Limited')
+        $this->email->from(' customercare@investor-oceanenergy.com ', 'OceanEnergy USA LLC')
             ->to($data['email'])
             ->subject('Email Verification')
 						->message('<center>Please copy the code to verify your account. <br> <strong>' . $verification_code . '</strong></center>');
