@@ -24,12 +24,12 @@ class Deposits_admin extends CI_Controller
     // print_r($pending_deposits);
 
     $deposit_data = array();
-    foreach($pending_deposits as $pending){
+    foreach ($pending_deposits as $pending) {
       // print_r($pending);
 
-      if(isset($pending->member_id)){
+      if (isset($pending->member_id)) {
 
-        if(!$this->Members->is_exist($pending->member_id)){
+        if (!$this->Members->is_exist($pending->member_id)) {
           continue;
         }
 
@@ -41,7 +41,7 @@ class Deposits_admin extends CI_Controller
         $temp['id'] = $pending->id;
         $temp['client_name'] = ucfirst($member_data->full_name);
         $temp['email'] = $member_data->email_address;
-        $temp['amount'] = number_format($pending->amount,2);
+        $temp['amount'] = number_format($pending->amount, 2);
         $temp['plan'] = $package_data->package_name;
         $temp['date'] = $pending->date;
         $temp['mode'] = $deposit_mode->name;
@@ -57,7 +57,8 @@ class Deposits_admin extends CI_Controller
     $this->load->view('admin/templates/footer');
   }
 
-  public function approve_deposit($deposit_id){
+  public function approve_deposit($deposit_id)
+  {
 
     $root_member = $this->Members->get_root();
     $deposit = $this->DepositModel->get_by_id($deposit_id);
@@ -66,10 +67,10 @@ class Deposits_admin extends CI_Controller
     $x = $this->ReferralModel->get_referrer($member->id);
     // print_r($x);
 
-    if($this->ReferralModel->get_referrer($member->id)->referrer_id != 1){
+    if ($this->ReferralModel->get_referrer($member->id)->referrer_id != 3) {
       $level_1 = $this->ReferralModel->get_referrer($member->id);
       // print_r($level_1);
-      $bonus_1 = $deposit->amount * 0.08;
+      $bonus_1 = $deposit->amount * 0.05;
       $bonus_1_data = array(
         'deposit_id' => $deposit->id,
         'referrer_id' => $level_1->referrer_id,
@@ -77,10 +78,10 @@ class Deposits_admin extends CI_Controller
       );
       $this->Referral_bonus_model->add($bonus_1_data);
 
-      if($this->ReferralModel->get_referrer($level_1->referrer_id)->referrer_id != 1){
+      if ($this->ReferralModel->get_referrer($level_1->referrer_id)->referrer_id != 3) {
         $level_2 = $this->ReferralModel->get_referrer($level_1->referrer_id);
         // print_r($level_2);
-        $bonus_2 = $deposit->amount * 0.01;
+        $bonus_2 = $deposit->amount * 0.03;
         $bonus_2_data = array(
           'deposit_id' => $deposit->id,
           'referrer_id' => $level_2->referrer_id,
@@ -88,10 +89,10 @@ class Deposits_admin extends CI_Controller
         );
         $this->Referral_bonus_model->add($bonus_2_data);
 
-        if($this->ReferralModel->get_referrer($level_2->referrer_id)->referrer_id != 1){
+        if ($this->ReferralModel->get_referrer($level_2->referrer_id)->referrer_id != 3) {
           $level_3 = $this->ReferralModel->get_referrer($level_2->referrer_id);
           // print_r($level_3);
-          $bonus_3 = $deposit->amount * 0.01;
+          $bonus_3 = $deposit->amount * 0.02;
           $bonus_3_data = array(
             'deposit_id' => $deposit->id,
             'referrer_id' => $level_3->referrer_id,
@@ -100,47 +101,57 @@ class Deposits_admin extends CI_Controller
           $this->Referral_bonus_model->add($bonus_3_data);
 
 
-        if($this->ReferralModel->get_referrer($level_3->referrer_id)->referrer_id != 1){
-          $level_4 = $this->ReferralModel->get_referrer($level_3->referrer_id);
-          // print_r($level_3);
-          $bonus_4 = $deposit->amount * 0.01;
-          $bonus_4_data = array(
-            'deposit_id' => $deposit->id,
-            'referrer_id' => $level_4->referrer_id,
-            'amount' => $bonus_4
-          );
-          $this->Referral_bonus_model->add($bonus_4_data);
+          if ($this->ReferralModel->get_referrer($level_3->referrer_id)->referrer_id != 3) {
+            $level_4 = $this->ReferralModel->get_referrer($level_3->referrer_id);
+            // print_r($level_3);
+            $bonus_4 = $deposit->amount * 0.01;
+            $bonus_4_data = array(
+              'deposit_id' => $deposit->id,
+              'referrer_id' => $level_4->referrer_id,
+              'amount' => $bonus_4
+            );
+            $this->Referral_bonus_model->add($bonus_4_data);
 
 
-        if($this->ReferralModel->get_referrer($level_4->referrer_id)->referrer_id != 1){
-          $level_5 = $this->ReferralModel->get_referrer($level_4->referrer_id);
-          // print_r($level_3);
-          $bonus_5 = $deposit->amount * 0.01;
-          $bonus_5_data = array(
-            'deposit_id' => $deposit->id,
-            'referrer_id' => $level_5->referrer_id,
-            'amount' => $bonus_5
-          );
-          $this->Referral_bonus_model->add($bonus_5_data);
+            if ($this->ReferralModel->get_referrer($level_4->referrer_id)->referrer_id != 3) {
+              $level_5 = $this->ReferralModel->get_referrer($level_4->referrer_id);
+              // print_r($level_3);
+              $bonus_5 = $deposit->amount * 0.005;
+              $bonus_5_data = array(
+                'deposit_id' => $deposit->id,
+                'referrer_id' => $level_5->referrer_id,
+                'amount' => $bonus_5
+              );
+              $this->Referral_bonus_model->add($bonus_5_data);
+
+              if ($this->ReferralModel->get_referrer($level_5->referrer_id)->referrer_id != 3) {
+                $level_6 = $this->ReferralModel->get_referrer($level_5->referrer_id);
+                // print_r($level_3);
+                $bonus_6 = $deposit->amount * 0.003;
+                $bonus_6_data = array(
+                  'deposit_id' => $deposit->id,
+                  'referrer_id' => $level_6->referrer_id,
+                  'amount' => $bonus_6
+                );
+                $this->Referral_bonus_model->add($bonus_6_data);
+              }
+            }
+          }
         }
-      }
-    }
       }
     }
 
     $this->DepositModel->Approve_pending($deposit_id);
 
     redirect('deposits_admin', 'refresh');
-
   }
 
 
-  public function delete_deposit($deposit_id){
+  public function delete_deposit($deposit_id)
+  {
 
     $this->DepositModel->delete_deposit($deposit_id);
 
     redirect('deposits_admin', 'refresh');
-
   }
-
 }
