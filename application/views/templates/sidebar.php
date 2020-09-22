@@ -15,7 +15,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					href="<?= base_url();?>dashboard" class="nav-link"><i class="fas fa-home"></i><span>MY DASHBOARD</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'plans' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>plans" class="nav-link"><i class="fas fa-piggy-bank"></i><span>MAKE DEPOSIT</span></a>
+					href="<?= base_url();?>plans" class="nav-link"><i class="fas fa-piggy-bank"></i><span>MAKE PAYMENTS</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'account_settings' ? 'active' : ''; ?>"> <a
 					href="<?= base_url();?>account_settings" class="nav-link"><i class="fas fa-edit"></i><span>ACCOUNT SETTINGS</span></a>
@@ -40,7 +40,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					href="<?= base_url();?>your_referrals" class="nav-link"><i class="fas fa-comments-dollar"></i><span>AFFILIATE PROGRAM</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'fund_transfer' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>fund_transfer" class="nav-link"><i class="fas fa-exchange-alt"></i><span>SEND FUNDS</span></a>
+					href="<?= base_url();?>fund_transfer" class="nav-link"><i class="fas fa-exchange-alt"></i><span>SEND FUNDS TO ANOTHER USER</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'fund_transfer' ? 'active' : ''; ?>" style="visibility: hidden;"> <a
 					href="<?= base_url();?>fund_transfer" class="nav-link"><i class="fas fa-exchange-alt"></i><span>Peer to Peer Transfer</span></a>
