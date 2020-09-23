@@ -187,7 +187,7 @@
 								</div>
 								<input type="text" class="deposit-amount form-control <?php if (strlen(form_error('deposit_amount')) > 0) {
 																							echo "is-invalid";
-																						} ?>" name="deposit_amount" id="deposit-amount" placeholder="$ 0.00" value="<?php set_value('deposit_amount', '', true); ?>">
+																						} ?>" name="deposit_amount" id="deposit-amount" placeholder="0.00" value="<?php set_value('deposit_amount', '', true); ?>">
 								<!-- <div class="input-group-append">
 									<span class="input-group-text">.00</span>
 								</div> -->
