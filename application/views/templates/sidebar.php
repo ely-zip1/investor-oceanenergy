@@ -20,7 +20,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'account_settings' ? 'active' : ''; ?>"> <a
 					href="<?= base_url();?>account_settings" class="nav-link"><i class="fas fa-edit"></i><span>ACCOUNT SETTINGS</span></a>
 			</li>
-			<li class="dropdown <?php echo $this->uri->segment(1) == 'your_deposits' ? 'active' : ''; ?>"> <aq
+			<li class="dropdown <?php echo $this->uri->segment(1) == 'your_deposits' ? 'active' : ''; ?>"> <a
 					href="<?= base_url();?>your_deposits" class="nav-link"><i class="fas fa-dollar-sign"></i><span>PURCHASE HISTORY</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'withdraw' ? 'active' : ''; ?>"> <a
