@@ -30,9 +30,9 @@ class Your_deposits extends CI_Controller
     $ultramax_deposit_data = array();
     $panamax_deposit_data = array();
     $capesize_deposit_data = array();
-    $ultramax_days = 185;
-    $panamax_days = 155;
-    $capesize_days = 125;
+    $ultramax_days = 180;
+    $panamax_days = 150;
+    $capesize_days = 120;
 
     foreach ($deposits as $deposit) {
       if($deposit->is_pending == 0){
