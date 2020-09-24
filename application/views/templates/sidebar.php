@@ -15,13 +15,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 					href="<?= base_url();?>dashboard" class="nav-link"><i class="fas fa-home"></i><span>MY DASHBOARD</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'plans' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>plans" class="nav-link"><i class="fas fa-piggy-bank"></i><span>MAKE PAYMENTS</span></a>
+					href="<?= base_url();?>plans" class="nav-link"><i class="fas fa-piggy-bank"></i><span>PURCHASE PLAN</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'account_settings' ? 'active' : ''; ?>"> <a
 					href="<?= base_url();?>account_settings" class="nav-link"><i class="fas fa-edit"></i><span>ACCOUNT SETTINGS</span></a>
 			</li>
-			<li class="dropdown <?php echo $this->uri->segment(1) == 'your_deposits' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>your_deposits" class="nav-link"><i class="fas fa-dollar-sign"></i><span>MY ACTIVE DEPOSITS</span></a>
+			<li class="dropdown <?php echo $this->uri->segment(1) == 'your_deposits' ? 'active' : ''; ?>"> <aq
+					href="<?= base_url();?>your_deposits" class="nav-link"><i class="fas fa-dollar-sign"></i><span>PURCHASE HISTORY</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'withdraw' ? 'active' : ''; ?>"> <a
 					href="<?= base_url();?>withdraw" class="nav-link"><i class="fas fa-money-check-alt"></i><span>WITHDRAW FUNDS</span></a>
