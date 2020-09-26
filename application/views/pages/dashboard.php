@@ -13,11 +13,11 @@
 											<!-- <li class="media">
                         <img alt="image" class="mr-3 rounded-circle" width="40" src="assets/img/avatar/avatar-3.png">
                         <div class="media-body">
-                          <div class="media-title"><span class="username"><?php if(isset($username)){echo $username;} ?></span></div>
+                          <div class="media-title"><span class="username"><?php if (isset($username)) {echo $username;}?></span></div>
                           <div class="text-job text-muted">Welcome</div>
                         </div>
                       </li> -->
-						<!-- <span class="username"><?php if(isset($username)){echo $username;} ?></span><br>
+						<!-- <span class="username"><?php if (isset($username)) {echo $username;}?></span><br>
 						Welcome -->
 					</div>
 				</div>
@@ -32,7 +32,7 @@
 							<div class="media-body">
 								<div class="media-title" style="color:white; font-weight: bold;">Total Investment</div>
 								<div class="text-job" style="color:white; font-weight: bold;">
-									<?php if(isset($total_deposit)){echo $total_deposit;} ?>
+									<?php if (isset($total_deposit)) {echo $total_deposit;}?>
 								</div>
 							</div>
 						</li>
@@ -46,7 +46,7 @@
 							<div class="media-body">
 								<div class="media-title" style="color:white; font-weight: bold;">Last Investment</div>
 								<div class="text-job" style="color:white; font-weight: bold;">
-									<?php if(isset($last_deposit)){echo $last_deposit;} ?>
+									<?php if (isset($last_deposit)) {echo $last_deposit;}?>
 								</div>
 							</div>
 						</li>
@@ -60,7 +60,7 @@
 							<div class="media-body">
 								<div class="media-title" style="color:white; font-weight: bold;">Total Withdraw</div>
 								<div class="text-job" style="color:white; font-weight: bold;">
-									<?php if(isset($total_withdrawals)){echo $total_withdrawals;} ?>
+									<?php if (isset($total_withdrawals)) {echo $total_withdrawals;}?>
 								</div>
 							</div>
 						</li>
@@ -74,7 +74,7 @@
 							<div class="media-body">
 								<div class="media-title" style="color:white; font-weight: bold;">Last Withdraw</div>
 								<div class="text-job" style="color:white; font-weight: bold;">
-									<?php if(isset($last_withdrawal)){echo $last_withdrawal;} ?>
+									<?php if (isset($last_withdrawal)) {echo $last_withdrawal;}?>
 								</div>
 							</div>
 						</li>
@@ -98,7 +98,7 @@
 											<div class="media-body">
 												<div class="text-job" style="font-weight: bold;">Account Balance</div>
 												<div class="media-title" style="font-weight: bold;">
-													<?php if(isset($account_balance)){echo $account_balance;} ?>
+													<?php if (isset($account_balance)) {echo $account_balance;}?>
 												</div>
 											</div>
 										</li>
@@ -112,7 +112,7 @@
 											<div class="media-body">
 												<div class="text-job" style="font-weight: bold;">Active Deposit</div>
 												<div class="media-title" style="font-weight: bold;">
-														<?php if(isset($active_deposit)){echo $active_deposit;} ?>
+														<?php if (isset($active_deposit)) {echo $active_deposit;}?>
 												</div>
 											</div>
 										</li>
@@ -126,7 +126,7 @@
 											<div class="media-body">
 												<div class="text-job" style="font-weight: bold;">Total Earned</div>
 												<div class="media-title" style="font-weight: bold;">
-													<?php if(isset($total_growth)){echo $total_growth;} ?>
+													<?php if (isset($total_growth)) {echo $total_growth;}?>
 												</div>
 											</div>
 										</li>
@@ -140,7 +140,7 @@
 											<div class="media-body">
 												<div class="text-job" style="font-weight: bold;">Pending Withdraw</div>
 												<div class="media-title" style="font-weight: bold;">
-														<?php if(isset($pending_withdrawals)){echo $pending_withdrawals;} ?>
+														<?php if (isset($pending_withdrawals)) {echo $pending_withdrawals;}?>
 													</div>
 											</div>
 										</li>
@@ -154,7 +154,7 @@
 											<div class="media-body">
 												<div class="text-job" style="font-weight: bold;">Last Withdraw</div>
 												<div class="media-title" style="font-weight: bold;">
-													<?php if(isset($last_withdrawal)){echo $last_withdrawal;} ?>
+													<?php if (isset($last_withdrawal)) {echo $last_withdrawal;}?>
 												</div>
 											</div>
 										</li>
@@ -216,7 +216,7 @@
           </div>
         </div>
       </div>
-		<?php $this->load->view('pages/prefooter'); ?>
+		<?php $this->load->view('pages/prefooter');?>
 
 <script type="text/javascript">
 	function copyToClipboard(element) {

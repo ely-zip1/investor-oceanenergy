@@ -164,6 +164,16 @@
 
           return $query->row();
         }
+        
+        public function get_total_approved_deposit($member_id){
+          $this->db->select_sum('amount');
+          $this->db->where('member_id',$member_id);
+          $this->db->where('is_pending', 0);
+          
+          $query = $this->db->get('td_deposits');
+
+          return $query->row();
+        }
 
         public function get_member_reinvestment($member_id){
           $this->db->where('member_id', $member_id);

@@ -43,7 +43,7 @@ class Dashboard extends CI_Controller {
 			$total_growth = $this->DepositModel->get_total_growth($member_data->id);
 			// print_r($total_growth);
 			$last_deposit = $this->DepositModel->get_latest_deposit_amount($member_data->id);
-			$total_deposit = $this->DepositModel->get_total_deposit($member_data->id);
+			$total_deposit = $this->DepositModel->get_total_approved_deposit($member_data->id);
 			$total_bonus = $this->Referral_bonus_model->get_total_bonus($member_data->id);
 			$total_reinvestment = $this->DepositModel->get_total_member_reinvestment($member_data->id);
 	    $total_sent = $this->Fund_transfer_model->get_total_sent($member_data->id);
