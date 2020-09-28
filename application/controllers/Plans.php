@@ -138,7 +138,7 @@ class Plans extends CI_Controller
 	{
 
 		if ($_POST['chosen_plan'] == 'plan1') {
-			if ($_POST['deposit_amount'] >= 150 && $_POST['deposit_amount'] <= 1499) {
+			if ($_POST['deposit_amount'] >= 50 && $_POST['deposit_amount'] <= 1499) {
 				return true;
 			} else {
 				$this->form_validation->set_message('valid_deposit', 'Deposit Amount does not match your selected plan.');
@@ -176,8 +176,8 @@ class Plans extends CI_Controller
 			$account_balance = ($total_growth + $total_bonus + $total_received) - $total_withdrawn - $total_reinvestment->amount - $total_sent;
 
 			if ($_POST['chosen_plan'] == 'plan1') {
-				if ($_POST['deposit_amount'] >= 150 && $_POST['deposit_amount'] <= 1499) {
-					if ($account_balance < 150) {
+				if ($_POST['deposit_amount'] >= 50 && $_POST['deposit_amount'] <= 1499) {
+					if ($account_balance < 50) {
 						$this->form_validation->set_message('validate_reinvestment', 'Insufficient Account Balance.');
 						return false;
 					} else {

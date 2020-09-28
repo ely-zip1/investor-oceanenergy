@@ -29,7 +29,7 @@
 							</div>
 							<br>
 							<div class="investment-amount" style="background: #70CDE3 !important;">
-								$ 150
+								$ 50
 							</div>
 							<br>
 							<div class="plan-detail">
