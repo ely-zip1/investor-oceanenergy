@@ -50,9 +50,9 @@ class Your_deposits extends CI_Controller
           $ultramax['date_approved'] = $deposit->date_approved;
 
           if($deposit->deposit_options_id == 7){
-            $ultramax['status'] = 'Fulfilled';
+            $ultramax['status'] = 'Processed';
           }else{
-            $ultramax['status'] = ($deposit->is_pending == 1) ? 'Pending' : 'Fulfilled';
+            $ultramax['status'] = ($deposit->is_pending == 1) ? 'Processing' : 'Processed';
           }
 
           if($deposit->is_pending == 1){
@@ -74,9 +74,9 @@ class Your_deposits extends CI_Controller
           $panamax['date_approved'] = $deposit->date_approved;
 
           if($deposit->deposit_options_id == 7){
-            $panamax['status'] = 'Fulfilled';
+            $panamax['status'] = 'Processed';
           }else{
-            $panamax['status'] = ($deposit->is_pending == 1) ? 'Pending' : 'Fulfilled';
+            $panamax['status'] = ($deposit->is_pending == 1) ? 'Processing' : 'Processed';
           }
 
           if($deposit->is_pending == 1){
@@ -98,9 +98,9 @@ class Your_deposits extends CI_Controller
           $capesize['date_approved'] = $deposit->date_approved;
 
           if($deposit->deposit_options_id == 7){
-            $capesize['status'] = 'Fulfilled';
+            $capesize['status'] = 'Processed';
           }else{
-            $capesize['status'] = ($deposit->is_pending == 1) ? 'Pending' : 'Fulfilled';
+            $capesize['status'] = ($deposit->is_pending == 1) ? 'Processing' : 'Processed';
           }
 
           if($deposit->is_pending == 1){
